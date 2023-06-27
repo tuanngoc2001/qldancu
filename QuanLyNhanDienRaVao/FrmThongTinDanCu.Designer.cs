@@ -578,6 +578,7 @@ namespace MultiFaceRec
             this.btnthem.TextMarginLeft = 0;
             this.btnthem.TextPadding = new System.Windows.Forms.Padding(0);
             this.btnthem.UseDefaultRadiusAndThickness = true;
+            this.btnthem.Click += new System.EventHandler(this.btnthem_Click);
             // 
             // bunifuTextBox16
             // 

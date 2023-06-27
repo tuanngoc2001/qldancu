@@ -519,5 +519,44 @@ namespace MultiFaceRec
                 return 0;
             }
         }
+        public void themCuDan(String phongDK, String name, String sex, DateTime date, String CMND, DateTime ngayCap, String noiCap, 
+            String sdt, String ngonNgu, String thuongTru, String ngheNghiep, String noiLamViec, String dantoc, String noiSinh, String queQuan, String email) {
+            DANCU danCu = new DANCU();
+            danCu.MADCU = Guid.NewGuid().ToString();
+            if(!phongDK.Equals(String.Empty))
+            {
+                var id = data.PHONGs.Where(s => s.MAPHONG == phongDK).FirstOrDefault();
+                if(id == null)
+                {
+                    danCu.PHONG = null;
+                    if (MessageBox.Show("Không tìm thấy mã phòng đăng ký? Bạn co muon tiep tuc", "Question", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                        danCu.TRANGTHAI = false;
+                    else
+                        return;
+                }
+                else
+                {
+                    danCu.TRANGTHAI = true;
+                }
+            }   
+            danCu.TENCUDAN = name;
+            danCu.GIOITINH = sex;
+            danCu.NGAYSINH = date;
+            danCu.CMND = CMND;
+            danCu.NGAYCAP = ngayCap;
+            danCu.NOICAP = noiCap;
+            danCu.SDT = sdt;
+            danCu.QUOCTICH = ngonNgu;
+            danCu.NOITHUONGTRU = thuongTru;
+            danCu.NGHENGHIEP = ngheNghiep;
+            danCu.NOILAMVIEC = noiLamViec;
+            danCu.DANTOC = dantoc;
+            danCu.NOISINH = noiSinh;
+            danCu.QUEQUAN = queQuan;
+            danCu.EMAIL = email;
+            data.DANCUs.InsertOnSubmit(danCu);
+            data.SubmitChanges();
+
+        }
     }
 }
