@@ -204,8 +204,8 @@ namespace MultiFaceRec
         {
             if (dt.ttRa() == 1 || dt.ttVao() == 1)
             {
-                bunifuSnackbar1.Show(this, "Xin hãy tắt Camera trước khi thoát!!!",
-            Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 2000, "", Bunifu.UI.WinForms.BunifuSnackbar.Positions.MiddleCenter);
+            //    bunifuSnackbar1.Show(this, "Xin hãy tắt Camera trước khi thoát!!!",
+            //Bunifu.UI.WinForms.BunifuSnackbar.MessageTypes.Error, 2000, "", Bunifu.UI.WinForms.BunifuSnackbar.Positions.MiddleCenter);
             }
             else
             {
@@ -312,8 +312,7 @@ namespace MultiFaceRec
 
         private void bunifuButton8_Click(object sender, EventArgs e)
         {
-            FrmThongTinDanCu dancu = new FrmThongTinDanCu();
-            dancu.Show();
+            FormBenTrong(new FrmThongTinDanCu());
         }
 
         private void bunifuToolTip1_Popup(object sender, BunifuToolTip.PopupEventArgs e)
@@ -448,7 +447,12 @@ namespace MultiFaceRec
 
         private void bunifuButton9_Click(object sender, EventArgs e)
         {
-
+            if (MessageBox.Show("Do you want ,?", "Question", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                this.Close();
+                FrmDangNhap dangNhap = new FrmDangNhap();
+                dangNhap.Show();
+            }
         }
     }
 }

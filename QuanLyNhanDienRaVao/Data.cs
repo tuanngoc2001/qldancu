@@ -450,6 +450,33 @@ namespace MultiFaceRec
                         }).Distinct();
             }
         }
+        public void deleteCuDan(String ma)
+        {
+            if (!ma.Equals(String.Empty))
+            {
+
+                var id = data.DANCUs.Where(s => s.MADCU == ma).FirstOrDefault();
+                if (id != null)
+                {
+                    data.DANCUs.DeleteOnSubmit(id);
+                    data.SubmitChanges();
+                    MessageBox.Show("Xóa dân cư thành công!", "Caption", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+
+
+                    MessageBox.Show("Không tìm thấy thông tin dân cư!", "Caption", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            else
+            {
+
+
+                MessageBox.Show("Không tìm thấy thông tin dân cư!", "Caption", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+
+        } 
         public void updateCamTat1(int id)
         {
             RAVAO_TRANGTHAICAMERA tt = data.RAVAO_TRANGTHAICAMERAs.Where(k => k.ID == id).FirstOrDefault();

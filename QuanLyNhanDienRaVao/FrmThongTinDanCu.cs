@@ -12,6 +12,7 @@ namespace MultiFaceRec
 {
     public partial class FrmThongTinDanCu : Form
     {
+        Data dt = new Data();
         public FrmThongTinDanCu()
         {
             InitializeComponent();
@@ -19,6 +20,18 @@ namespace MultiFaceRec
 
         private void bunifuTextBox10_TextChanged(object sender, EventArgs e)
         {
+
+        }
+
+        private void bunifuPanel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnxoa_Click(object sender, EventArgs e)
+        {
+            String ma = txtmadancu.Text;
+            dt.deleteCuDan(ma);
 
         }
     }
