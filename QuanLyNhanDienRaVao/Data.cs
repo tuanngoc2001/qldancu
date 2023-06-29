@@ -113,6 +113,13 @@ namespace MultiFaceRec
         {
             return data.DANCUs.Where(kh => kh.TRANGTHAI == false).Count();
         }
+        public bool checkDanCu(String key)
+        {
+            var check = data.DANCUs.Where(c => c.MADCU.Equals(key)).FirstOrDefault();
+            if (check != null)
+                return true;
+            return false;
+        }
 
         public int checktrongchungcu(string ten)
         {
@@ -529,11 +536,11 @@ namespace MultiFaceRec
             var cudan = from la in data.DANCUs select la ;
             dgv.DataSource = cudan;
         }
-        public bool themCuDan(String phongDK, String name, String sex, DateTime date, String CMND, DateTime ngayCap, String noiCap, 
+        public bool themCuDan(string key, string phongDK, string name, string sex, DateTime date, string CMND, DateTime ngayCap, string noiCap, 
             String sdt, String ngonNgu, String thuongTru, String ngheNghiep, String noiLamViec, String dantoc, String noiSinh, 
             String queQuan, String email, String quocTich) {
             DANCU danCu = new DANCU();
-            danCu.MADCU = Guid.NewGuid().ToString();
+            danCu.MADCU = key;
             if(!phongDK.Equals(String.Empty))
             {
                 var id = data.PHONGs.Where(s => s.MAPHONG == phongDK).FirstOrDefault();
@@ -566,6 +573,7 @@ namespace MultiFaceRec
             danCu.NOISINH = noiSinh;
             danCu.QUEQUAN = queQuan;
             danCu.EMAIL = email;
+            danCu.QUOCTICH = quocTich;
             data.DANCUs.InsertOnSubmit(danCu);
             data.SubmitChanges();
             return true;
@@ -576,12 +584,11 @@ namespace MultiFaceRec
             var cudan = data.DANCUs.Where(s => s.MADCU.Contains(key));
             dgv.DataSource = cudan;
         }
-        public bool updateCuDan(String phongDK, String name, String sex, DateTime date, String CMND, DateTime ngayCap, String noiCap,
-            String sdt, String ngonNgu, String thuongTru, String ngheNghiep, String noiLamViec, String dantoc, String noiSinh, String queQuan, String email)
+        public bool updateCuDan(string key, string phongDK, string name, string sex, DateTime date, string CMND, DateTime ngayCap, string noiCap,
+            string sdt, string ngonNgu, string thuongTru, string ngheNghiep, string noiLamViec, string dantoc, string noiSinh, string queQuan, string email, string quocTich)
         {
             DANCU danCu = new DANCU();
-            danCu.MADCU = Guid.NewGuid().ToString();
-            if (!phongDK.Equals(String.Empty))
+            if (!phongDK.Equals(string.Empty))
             {
                 var id = data.PHONGs.Where(s => s.MAPHONG == phongDK).FirstOrDefault();
                 if (id == null)
@@ -612,6 +619,7 @@ namespace MultiFaceRec
             danCu.NOISINH = noiSinh;
             danCu.QUEQUAN = queQuan;
             danCu.EMAIL = email;
+            danCu.QUOCTICH = quocTich;
             data.SubmitChanges();
             return true;
 

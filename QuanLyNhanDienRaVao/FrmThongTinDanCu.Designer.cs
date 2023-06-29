@@ -2203,7 +2203,7 @@ namespace MultiFaceRec
             this.txttrangthai.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txttrangthai.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txttrangthai.DefaultText = "Không đăng ký cư trú";
-            this.txttrangthai.FillColor = System.Drawing.Color.White;
+            this.txttrangthai.FillColor = System.Drawing.Color.Silver;
             this.txttrangthai.HideSelection = true;
             this.txttrangthai.IconLeft = null;
             this.txttrangthai.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -2234,7 +2234,7 @@ namespace MultiFaceRec
             stateProperties59.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txttrangthai.OnHoverState = stateProperties59;
             stateProperties60.BorderColor = System.Drawing.Color.Silver;
-            stateProperties60.FillColor = System.Drawing.Color.White;
+            stateProperties60.FillColor = System.Drawing.Color.Silver;
             stateProperties60.ForeColor = System.Drawing.Color.Empty;
             stateProperties60.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txttrangthai.OnIdleState = stateProperties60;
@@ -2310,7 +2310,7 @@ namespace MultiFaceRec
             this.txtmadancu.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txtmadancu.DefaultFont = new System.Drawing.Font("Segoe UI", 9.25F);
             this.txtmadancu.DefaultText = "";
-            this.txtmadancu.FillColor = System.Drawing.Color.White;
+            this.txtmadancu.FillColor = System.Drawing.Color.Silver;
             this.txtmadancu.HideSelection = true;
             this.txtmadancu.IconLeft = null;
             this.txtmadancu.IconLeftCursor = System.Windows.Forms.Cursors.IBeam;
@@ -2340,7 +2340,7 @@ namespace MultiFaceRec
             stateProperties63.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtmadancu.OnHoverState = stateProperties63;
             stateProperties64.BorderColor = System.Drawing.Color.Silver;
-            stateProperties64.FillColor = System.Drawing.Color.White;
+            stateProperties64.FillColor = System.Drawing.Color.Silver;
             stateProperties64.ForeColor = System.Drawing.Color.Empty;
             stateProperties64.PlaceholderForeColor = System.Drawing.Color.Empty;
             this.txtmadancu.OnIdleState = stateProperties64;
