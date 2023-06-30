@@ -584,10 +584,26 @@ namespace MultiFaceRec
             var cudan = data.DANCUs.Where(s => s.MADCU.Contains(key));
             dgv.DataSource = cudan;
         }
+        public void searchName(String key, DataGridView dgv)
+        {
+            //var data = data.
+            //dgv.DataSource =
+        }
+        public IQueryable searchName(String key)
+        {
+            return (from c in data.DANCUs where c.TENCUDAN.Contains(key)
+                    select new
+                    {
+                        c.MADCU,
+                        c.TENCUDAN,
+                        c.MAPHONG,
+                    }
+                    );
+        }
         public bool updateCuDan(string key, string phongDK, string name, string sex, DateTime date, string CMND, DateTime ngayCap, string noiCap,
             string sdt, string ngonNgu, string thuongTru, string ngheNghiep, string noiLamViec, string dantoc, string noiSinh, string queQuan, string email, string quocTich)
         {
-            DANCU danCu = new DANCU();
+            DANCU danCu = data.DANCUs.Where(i => i.MADCU.Equals(key)).FirstOrDefault();
             if (!phongDK.Equals(string.Empty))
             {
                 var id = data.PHONGs.Where(s => s.MAPHONG == phongDK).FirstOrDefault();

@@ -377,7 +377,6 @@ namespace MultiFaceRec
 
         private void tabPage2_Click(object sender, EventArgs e)
         {
-
         }
 
         private void bunifuDataGridView2_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -387,7 +386,7 @@ namespace MultiFaceRec
 
         private void search2_TextChanged(object sender, EventArgs e)
         {
-
+            bunifuDataGridView2.DataSource = dt.searchName(search2.Text);
         }
 
         private void bunifuGradientPanel1_Click(object sender, EventArgs e)

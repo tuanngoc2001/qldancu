@@ -122,11 +122,10 @@ namespace MultiFaceRec
                 String queQuan = txtquequan.Text;
                 String email = txtemail.Text;
                 String quocTich = txtquoctich.Text;
-                bool result = false;
                 if (!check)
-                    result = dt.themCuDan(txtmadancu.Text, phongDK, name, sex, date, CMND, ngayCap, noiCap, sdt, ngonNgu, thuongTru, ngheNghiep, noiLamViec, dantoc, noiSinh, queQuan, email, quocTich);
+                    dt.themCuDan(txtmadancu.Text, phongDK, name, sex, date, CMND, ngayCap, noiCap, sdt, ngonNgu, thuongTru, ngheNghiep, noiLamViec, dantoc, noiSinh, queQuan, email, quocTich);
                 else
-                    result = dt.updateCuDan(txtmadancu.Text, phongDK, name, sex, date, CMND, ngayCap, noiCap, sdt, ngonNgu, thuongTru, ngheNghiep, noiLamViec, dantoc, noiSinh, queQuan, email, quocTich);
+                    dt.updateCuDan(txtmadancu.Text, phongDK, name, sex, date, CMND, ngayCap, noiCap, sdt, ngonNgu, thuongTru, ngheNghiep, noiLamViec, dantoc, noiSinh, queQuan, email, quocTich);
                 dt.loadCuDan(dgvCuDan);
                 resetData();
 
