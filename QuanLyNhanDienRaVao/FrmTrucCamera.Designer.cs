@@ -89,7 +89,7 @@ namespace MultiFaceRec
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 573F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 572F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(963, 536);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
@@ -105,7 +105,7 @@ namespace MultiFaceRec
             this.tableLayoutPanel3.RowCount = 2;
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel3.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel3.Size = new System.Drawing.Size(461, 567);
+            this.tableLayoutPanel3.Size = new System.Drawing.Size(461, 566);
             this.tableLayoutPanel3.TabIndex = 8;
             // 
             // tableLayoutPanel5
@@ -120,7 +120,7 @@ namespace MultiFaceRec
             this.tableLayoutPanel5.RowCount = 2;
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 12.68657F));
             this.tableLayoutPanel5.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 87.31343F));
-            this.tableLayoutPanel5.Size = new System.Drawing.Size(455, 278);
+            this.tableLayoutPanel5.Size = new System.Drawing.Size(455, 277);
             this.tableLayoutPanel5.TabIndex = 1;
             // 
             // tableLayoutPanel6
@@ -147,9 +147,6 @@ namespace MultiFaceRec
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
-            "Camera21",
-            "Camera22"});
             this.comboBox2.Location = new System.Drawing.Point(272, 3);
             this.comboBox2.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox2.Name = "comboBox2";
@@ -380,7 +377,7 @@ namespace MultiFaceRec
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox2.Location = new System.Drawing.Point(3, 38);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(449, 237);
+            this.pictureBox2.Size = new System.Drawing.Size(449, 236);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -424,15 +421,11 @@ namespace MultiFaceRec
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Camera11",
-            "Camera12"});
             this.comboBox1.Location = new System.Drawing.Point(269, 3);
             this.comboBox1.Margin = new System.Windows.Forms.Padding(2);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(177, 21);
             this.comboBox1.TabIndex = 8;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // bunifuLabel3
             // 
@@ -668,7 +661,7 @@ namespace MultiFaceRec
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(472, 4);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(487, 567);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(487, 566);
             this.flowLayoutPanel1.TabIndex = 9;
             // 
             // bunifuLabel2
