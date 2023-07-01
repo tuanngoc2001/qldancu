@@ -525,10 +525,9 @@
   <data name="txttrangthai.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAANMAAAAZCAYAAACrdBsLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACcSURBVHhe7dOxDcIAEARB91+V+6AMCgBkbYQIEEc4J030
-        n+5hZn/ceZ63lwfwk1spXTF9egC+VEpiglUpiQlWpSQmWJWSmGBVSmKCVSmJCValJCZYlZKYYFVKYoJV
-        KYkJVqUkJliVkphgVUpiglUpiQlWpSQmWJWSmGBVSmKCVSmJCValJCZYlZKYYFVKV0z39yPwtXspmdm+
-        43gCwJD3Hn1cvLAAAAAASUVORK5CYII=
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACDSURBVHhe7dOxCQMxAARB9V/VC5XhMlyAjUCJw/dvOAOX
+        XL4DCK21Xtd1fczs/nY/J6Ux9gH8Z/dzUhITPCEmiIgJImKCiJggIiaIiAkiYoKImCAiJoiICSJigoiY
+        ICImiIgJImKCiJggIiaIiAkiYoLIT0xzzvc+zOz+dj8nJeC5Mb46b4FIbILfbwAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="bunifuLabel3.BaseStylesheet" xml:space="preserve">
@@ -540,10 +539,9 @@
   <data name="txtmadancu.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAJ4AAAAZCAYAAADAMJcbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACXSURBVGhD7dKxDcIAEARB91+V+3AZFAAIbYRIfSRz0kT/
-        4R5mf9t5ntfbEwausvuE9+sBblF2wmOr7ITHVtkJj62yEx5bZSc8tspOeGyVnfDYKjvhsVV2wmOr7ITH
-        VtkJj62yEx5bZSc8tspOeGyVnfDYKjvhsVV2wmOr7ITHVtkJj62yEx5bZfcJ7/F9hJs8ys5sveN4ASWV
-        gUCHGNTFAAAAAElFTkSuQmCC
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB9SURBVGhD7dKxDYAwEATB778qWy6DMigA9JITCsCXzEiX
+        XLwFMWuta4zxmP29bm1nV9UHnNCt7eyExznCI0J4RAiPCOERITwihEeE8IgQHhHCI0J4RAiPCOERITwi
+        hEeE8IgQHhHCI0J4RAiPiE94c867D7O/163t7OC0qhdafdV5bEWj8gAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="bunifuLabel1.BaseStylesheet" xml:space="preserve">
